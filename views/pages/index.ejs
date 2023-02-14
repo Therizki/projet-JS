@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta description="description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <title>TITRE DE MA PAGE</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style_guide.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="">
+                        <img src="/images/profil.svg" alt="icon_profil" />
+                        Profil</a>
+                </li>
+                <li><a href="">
+                        <img src="images/calendar.svg" alt="icon_profil" />
+                        Evenements</a>
+                </li>
+                <li><a href="">
+                        <img src="images/mail.svg" alt="icon_profil" />
+                        Chat</a>
+                </li>
+                <li><a href="">
+                        <img src="images/groupes.svg" alt="icon_profil" />
+                        Groupes</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <h2>Mon titre</h2>
+        <div id="mon-contenu">
+            <h3>Mon contenu</h3>
+            <table>
+                <tr>
+                    <td>nom</td>
+                    <td>lieu</td>
+                    <td>nombreMaximal</td>
+                    <td>Delai</td>
+                    <td>DateEvent</td>
+                    <td>heurDepart</td>
+                    <td>heurFinition</td>
+                </tr>
+                <% events.forEach(function(item) { %>
+                    <tr>
+                        <td><%= item.name %></td>
+                        <td><%= item.lieu %></td>
+                        <td><%= item.nombreMaximal  %></td>
+                        <td><%=  item.Delai %></td>
+                        <td><%= item.DateEvent  %></td>
+                        <td><%= item.heurDepart %></td>
+                        <td><%= item.heurFinition %></td>  
+                    </tr>
+            
+                <% }); %>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
+    <h1>evenements</h1>
+    

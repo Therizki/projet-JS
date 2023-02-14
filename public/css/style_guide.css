@@ -1,0 +1,81 @@
+:root {
+	--main-color: #ff9900;
+	--dark-main-color: #d87400;
+	
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	height: 100%;
+
+	display: flex;
+}
+
+/* ==================== LEFT SIDE ==================== */
+header {
+	height: 100%;
+	width: 300px;
+
+	font-weight: bold;
+	background-color: var(--main-color);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav {
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li a {
+	display: block;
+	padding: 1em 0 1em 4em;
+	text-decoration: none;
+	color: #fff;
+}
+nav ul li a:hover,
+nav ul li a.active {
+	background-color: var(--dark-main-color);
+}
+
+nav ul li a img {
+	width: 25px;
+	margin-right: 1em;
+}
+/* =================================================== */
+
+/* ==================== RIGHT SIDE ==================== */
+
+main {
+	flex: 1;
+	padding: 3em;
+
+	display: flex;
+	flex-direction: column;
+}
+
+main h2 {
+	margin-top: 0;
+	margin-bottom: 2em;
+}
+
+/* =================================================== */
